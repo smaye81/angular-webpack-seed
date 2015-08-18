@@ -1,5 +1,7 @@
+var WebpackNotifierPlugin = require('webpack-notifier');
+
 var appConfig = {
-    WEBPACK_ENTRY : './app/app.js',
+    WEBPACK_ENTRY : ['./app/app.js'],
     BUNDLE_NAME : './app/bundle.js'
 };
 
@@ -9,6 +11,9 @@ module.exports = {
         path: __dirname,
         filename: appConfig.BUNDLE_NAME
     },
+    plugins : [
+        new WebpackNotifierPlugin()
+    ],
     module: {
         loaders: [
             {
