@@ -12,6 +12,7 @@ Uses:
     * babel-loader
     * css-loader
     * style-loader
+    * eslint-loader
 * Angular UI Router
 * Bootstrap
 * Gulp

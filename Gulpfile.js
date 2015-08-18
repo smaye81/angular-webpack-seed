@@ -1,35 +1,9 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var gutil = require('gulp-util');
 var assign = require('object-assign');
 var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
-
-var appConfig = {
-    WEBPACK_ENTRY : './app/app.js',
-    BUNDLE_NAME : './app/bundle.js',
-    JS_SRC_FILES : './app/modules/**/*.js'
-};
-var webpackConfig = {
-    entry: appConfig.WEBPACK_ENTRY,
-    output: {
-        path: __dirname,
-        filename: appConfig.BUNDLE_NAME
-    },
-    module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: "babel-loader"
-            },
-            {
-                test: /\.scss$/,
-                loader: 'style!css!sass'
-            }
-        ]
-    }
-};
+var webpackConfig = require("./webpack.config");
 
 function buildWebpack(config) {
     webpack(config, function(err, stats) {

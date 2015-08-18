@@ -3,3 +3,4 @@ app/bower_components/*
 app/bundle.js
 app/bundle.js.map
 build/
+.idea/
