@@ -1,7 +1,6 @@
 var appConfig = {
     WEBPACK_ENTRY : './app/app.js',
-    BUNDLE_NAME : './app/bundle.js',
-    JS_SRC_FILES : './app/modules/**/*.js'
+    BUNDLE_NAME : './app/bundle.js'
 };
 
 module.exports = {
