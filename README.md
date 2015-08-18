@@ -8,10 +8,10 @@ Uses:
 * Angular
 * Webpack
 * Webpack Loaders
-** sass-loader
-** babel-loader
-** css-loader
-** style-loader
+    * sass-loader
+    * babel-loader
+    * css-loader
+    * style-loader
 * Angular UI Router
 * Bootstrap
 * Gulp
