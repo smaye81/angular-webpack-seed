@@ -2,6 +2,9 @@ node_modules/*
 app/bower_components/*
 app/bundle.js
 app/bundle.js.map
+app/vendor.bundle.js
 build/
 .idea/
 npm-debug.log
+
+
